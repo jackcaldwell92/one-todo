@@ -25,6 +25,6 @@ module.exports = {
     'gatsby-plugin-styled-components',
   ],
   siteMetadata: {
-    title: 'Gatsby',
+    title: 'One Todo',
   },
 };

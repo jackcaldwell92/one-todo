@@ -1,10 +1,11 @@
 import * as React from 'react';
 
+import { Hero } from '../components/Index/Hero';
 import Layout from '../components/Layout';
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hello Gatsby</h1>
+    <Hero />
   </Layout>
 );
 

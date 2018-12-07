@@ -9,14 +9,16 @@ import {
 import { theme } from '../styled-components/theme';
 
 const GlobalStyle = createGlobalStyle`
-  margin: 10px;
+  body {
+    background-color: ${props => props.theme.shadow}
+  }
 `;
 
 interface IProps {
   children: JSX.Element;
 }
 
-const Layout = ({ children }: IProps) => (
+const Layout = (props: IProps) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -29,14 +31,12 @@ const Layout = ({ children }: IProps) => (
     `}
     render={data => (
       <>
-        <Helmet
-          title={data.site.siteMetadata.title}
-        >
+        <Helmet title={data.site.siteMetadata.title}>
           <html lang="en" />
         </Helmet>
         <ThemeProvider theme={theme}>
           <>
-            <div>{children}</div>
+            <div>{props.children}</div>
             <GlobalStyle />
           </>
         </ThemeProvider>

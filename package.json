@@ -1,6 +1,6 @@
 {
-  "name": "gatsby-ts-styled-components-boilerplate",
-  "description": "Opinionated starter for Gatsby",
+  "name": "one-todo",
+  "description": "Home page for app One Todo",
   "version": "1.0.0",
   "author": "Jack Caldwell",
   "dependencies": {
@@ -15,7 +15,8 @@
     "gatsby-plugin-typescript": "^2.0.1",
     "gatsby-source-filesystem": "^2.0.4",
     "gatsby-transformer-sharp": "^2.1.4",
-    "react": "^16.5.1",
+    "gsap": "^2.0.2",
+    "react": "16.5.1",
     "react-dom": "^16.5.1",
     "react-helmet": "^5.2.0",
     "styled-components": "^4.1.1"
@@ -29,6 +30,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@types/gsap": "^1.20.0",
     "@types/react-helmet": "^5.0.7",
     "@types/styled-components": "^4.1.0",
     "prettier": "^1.14.2",
