@@ -1,17 +1,17 @@
 import styled from '../../styled-components';
 
 const TodoDiv = styled.div`
-  align-content: center;
-  background: #f8f8f8;
+  align-items: center;
+  background: ${props => props.theme.stone};
   border-radius: 2rem;
-  display: grid;
-  fill: ${props => props.theme.offWhite};
+  display: flex;
   font-family: 'Work Sans', sans-serif;
-  font-size: 1.1rem;
   height: 50px;
-  justify-items: center;
-  width: 19rem;
+  justify-content: space-between;
+  width: 10rem;
   cursor: pointer;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 `;
 
 export default TodoDiv;
