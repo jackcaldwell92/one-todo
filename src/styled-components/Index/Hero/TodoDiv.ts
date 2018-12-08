@@ -8,7 +8,7 @@ const TodoDiv = styled.div`
   font-family: 'Work Sans', sans-serif;
   height: 50px;
   justify-content: space-between;
-  width: 10rem;
+  width: 8.5rem;
   cursor: pointer;
   padding-left: 1.5rem;
   padding-right: 1.5rem;

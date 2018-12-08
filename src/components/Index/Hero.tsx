@@ -34,7 +34,7 @@ export class Hero extends React.Component {
   };
 
   public animateTyping = () => {
-    const textToType = 'Download App';
+    const textToType = 'Get Started';
     const typingSpeed = 100;
     // tslint:disable-next-line
     for (let i = 0; i < textToType.length; i++) {

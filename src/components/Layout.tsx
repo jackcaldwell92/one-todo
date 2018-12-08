@@ -7,10 +7,13 @@ import {
   ThemeProvider,
 } from '../styled-components/styled-components';
 import { theme } from '../styled-components/theme';
+import Header from './Header';
 
 const GlobalStyle = createGlobalStyle`
   body {
-    background-color: ${props => props.theme.shadow}
+    font-family: 'Work Sans', sans-serif;
+    background-color: ${props => props.theme.shadow};
+    margin: 0;
   }
 `;
 
@@ -36,6 +39,7 @@ const Layout = (props: IProps) => (
         </Helmet>
         <ThemeProvider theme={theme}>
           <>
+            <Header />
             <div>{props.children}</div>
             <GlobalStyle />
           </>
